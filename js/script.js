@@ -3,10 +3,13 @@
 // Created by: Gabriel
 // Created on: Mar 2024
 // This file contains the JS functions for index.html
+"use strict"
 
-const lengthAString = document.getElementById("size-one").innerHTML
-const lengthBString = document.getElementById("size-two").innerHTML
-const lengthCString = document.getElementById("size-three").innerHTML
+function myButtonClicked() { 
+
+const lengthAString = parseInt(document.getElementById("size-one").value)
+const lengthBString = parseInt(document.getElementById("size-two").value)
+const lengthCString = parseInt(document.getElementById("size-three").value)
 
 const lengthA = parseFloat(lengthAString)
 const lengthB = parseFloat(lengthBString)
@@ -33,7 +36,4 @@ if (angleA == angleB && angleA == angleC) {
 
 }
 
-console.log(angleA)
-console.log(angleB)
-console.log(angleC)
-console.log(sumOfAngles)
+}
